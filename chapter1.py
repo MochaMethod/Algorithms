@@ -65,10 +65,10 @@ def binarySearch(orderedList: List[Any], item: Any) -> int:
         elif guess <= item:
             _low = mid + 1
 
-    return -1
+    return 0
 
-orderedList: List[str] = ["Abby", "Bryan", "Carl", "Ethan", "Kyle", "John", "Nancy"]
+orderedList: List[str] = ["Abby", "Abe", "Bryan", "Carl", "Ethan", "Frank", "John", "Kevin", "Nancy", "Oliver", "Phil"]
 intOrderedList: List[int] = [1, 3, 5, 6, 8, 10, 23]
 
-index: int = binarySearch(orderedList, "John")
+index: int = binarySearch(orderedList, "Kevin")
 print("Guess: ", index, orderedList[index])
